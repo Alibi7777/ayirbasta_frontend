@@ -85,33 +85,8 @@ This combination (MERN) allows for full-stack JavaScript development, enabling s
    • styled-components for component-based styling.
    • Jest and React Testing Library for testing.
 
-3. Testing Approach
-   All tests use Jest and React Testing Library. Key points:
-
-   1. Login Tests:
-      o Checks redirect if token is present.
-      o Verifies the form renders if token is absent.
-      o Mocks apiClient.post and ensures localStorage + navigation on successful login.
-   2. Registration Tests:
-      o Redirect if already logged in.
-      o Check rendering of input fields and correct API call on submit.
-      o Ensures navigation to /login on successful response.
-   3. Offers Tests:
-      o Mocks apiClient.get to confirm offers are displayed or an empty message shows.
-      o Verifies an "ADD OFFER" button is rendered.
-   4. AddOffer Tests:
-      o Checks form fields (category, name, description, image).
-      o Mocks apiClient.post to ensure submission logic works and navigates afterward.
-   5. BartersPage Tests:
-      o Mocks /v1/users/trades.
-      o Verifies "Trades to you" and "Trades from you" sections appear.
-      o Checks empty state message if no trades are present.
-   6. Settings Tests:
-      o Mocks fetching user data for the profile.
-      o Confirms the form is populated.
-      o Mocks a PATCH request and checks success/failure alerts.
 
 4. Clone the repository
-   1. git clone https://github.com/Asanalii/ayirbasta_frontend cd ayirbasta_front_react
+   1. git clone https://github.com/Alibi7777/ayirbasta_frontend cd ayirbasta_frontend
    2. Install dependencies npm install or yarn install
    3. npm run dev or yarn dev
